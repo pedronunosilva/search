@@ -1,5 +1,5 @@
 # search
-Basic name search in PHP
+Basic search engine in PHP
 
 -
 ### Credits
