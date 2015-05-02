@@ -1,2 +1,7 @@
 # search
-Basic name search in PHP
+Basic search engine in PHP
+
+-
+### Credits
+
+* [Kube CSS](https://github.com/imperavi/kube)
