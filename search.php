@@ -16,6 +16,7 @@
 <body class="units-container">
 	
 	<div class="units-row units-padding">
+		
 	<div class="unit-centered unit-60">
 		
 		<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>" class="forms">
@@ -105,12 +106,8 @@
 					echo 'ERROR: ' . $e->getMessage();
 				}
 				
-				
-			
-				
 		}					
 		?>		
-		
 		
 	</div>
 	</div>
