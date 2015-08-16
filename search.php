@@ -7,7 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="kube.min.css" />
+    	<link rel="stylesheet" href="kube.min.css" />
     
 	<title>Search</title>
 
@@ -23,7 +23,7 @@
 			
 			<label class="input-groups">
 				
-				<input type="text" name="search" placeholder="Search" />
+				<input type="text" name="searchKey" placeholder="Search" />
 				
 				<span class="btn-append">
             
@@ -39,9 +39,9 @@
 		<?php 
 			
 		
-		if( isset($_POST['search']) 
-			&& !empty($_POST['search']) 
-			&& preg_match("/^[a-zA-Z]/" , $name = trim($_POST['search']))
+		if( isset($_POST['searchKey']) 
+			&& !empty($_POST['searchKey']) 
+			&& preg_match("/^[a-zA-Z]/" , $name = trim($_POST['searchKey']))
 			&& strlen($name) >= 3 ) {
 				
 			
@@ -75,7 +75,7 @@
 				}
 				
 					
-				$sql=substr($sql,0,(strLen($sql)-4));//this will eat the last AND
+				$sql=substr($sql,0,(strLen($sql)-4));
 				
 				$sql .= " )";
 				
